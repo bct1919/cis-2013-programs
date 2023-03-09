@@ -28,24 +28,31 @@ var fixPrinter = function() {
         case boolPrinting === true && boolRedLight === true && boolRecognised === true:
             stringOutput = stringMessage2 + "\n" + stingMessage3 + "\n" + stringMessage4;
             break;
+
         case boolPrinting === true && boolRedLight === true && boolRecognised === false:
             stringOutput = stringMessage4 + "\n" + stringMessage5;
             break;
+
         case boolPrinting === true && boolRedLight === false && boolRecognised === true:
             stringOutput = stringMessage1 + "\n" + stringMessage2 + "\n" + stringMessage3;
             break;
+
         case boolPrinting === false && boolRedLight === true && boolRecognised === true:
             stringOutput = stringMessage3 + "\n" + stringMessage4;
             break;
+
         case boolPrinting === true && boolRedLight === false && boolRecognised === false:
             stringOutput = stringMessage5;
             break;
+
         case boolPrinting === false && boolRedLight === false && boolRecognised === false:
             stringOutput = stringMessage6;
             break;
+
         case boolPrinting === false && boolRedLight === false && boolRecognised === true:
             stringOutput = stringMessage3;
             break;
+            
     }
     $("output").value = stringOutput;
     };
